@@ -1,6 +1,0 @@
-{
-	"@type":"Subset",
-	"Name":"All Members",
-	"Alias":"Caption_Default",
-	"Expression":"[}Link_Emp_3AComp].MEMBERS"
-}

@@ -1,5 +1,0 @@
-{
-	"@type":"Subset",
-	"Name":"All Members",
-	"Expression":"[}Link_Allocation Calculation_3AAllocation Source Definition].MEMBERS"
-}
