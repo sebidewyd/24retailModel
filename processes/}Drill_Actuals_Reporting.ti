@@ -1,5 +1,0 @@
-#region Epilog
-#****Begin: Generated Statements***
-ReturnViewHandle('GLTransactions','GLTransactions');
-#****End: Generated Statements****
-#endregion
