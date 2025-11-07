@@ -1,5 +1,0 @@
-{
-	"@type":"Subset",
-	"Name":"Employee Name",
-	"Expression":"{[Employee].[Employee].[Name/Desc]}"
-}

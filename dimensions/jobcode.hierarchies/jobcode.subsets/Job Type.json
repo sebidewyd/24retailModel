@@ -1,6 +1,0 @@
-{
-	"@type":"Subset",
-	"Name":"Job Type",
-	"Alias":"Caption_Default",
-	"Expression":"{TM1SubsetToSet([jobcode].[jobcode], \"Job Type\")}"
-}

@@ -1,6 +1,0 @@
-{
-	"@type":"Subset",
-	"Name":"FTE",
-	"Alias":"Caption_Default",
-	"Expression":"{[Account].[Account].[FTE]}"
-}

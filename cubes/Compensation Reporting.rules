@@ -1,6 +1,0 @@
-SKIPCHECK;
-
-
-[]=if(!Employee Name @=DB('Compensation',!organization,!EmployeeList,!Month,!Year,!Version,'EmpID'),DB('Compensation',!organization,!EmployeeList,!Month,!Year,!Version,!Compensation),STET);
-
-FEEDERS;

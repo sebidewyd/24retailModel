@@ -1,5 +1,0 @@
-{
-	"@type":"Subset",
-	"Name":"Y",
-	"Expression":"{[Month].[Month].[Year]}"
-}

@@ -1,9 +1,0 @@
-#Region System
-FEEDSTRINGS;
-SKIPCHECK;
-UNDEFVALS;
-#EndRegion
-#skipcheck;
-['Current Quarter']=S:ELPAR('Month', DB('Calendar','Current Month','String'), 1) ;
-
-#feeders;

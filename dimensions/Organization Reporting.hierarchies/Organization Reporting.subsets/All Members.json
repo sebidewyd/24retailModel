@@ -1,6 +1,0 @@
-{
-	"@type":"Subset",
-	"Name":"All Members",
-	"Alias":"Caption_Default",
-	"Expression":"[Organization Reporting].MEMBERS"
-}

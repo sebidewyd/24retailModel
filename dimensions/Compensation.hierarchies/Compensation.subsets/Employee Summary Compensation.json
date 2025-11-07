@@ -1,6 +1,0 @@
-{
-	"@type":"Subset",
-	"Name":"Employee Summary Compensation",
-	"Alias":"Caption_Default",
-	"Expression":"{[Compensation].[Compensation].[6000],[Compensation].[Compensation].[Other Benefits Exp],[Compensation].[Compensation].[Medical Exp],[Compensation].[Compensation].[6005]}"
-}

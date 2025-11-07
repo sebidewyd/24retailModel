@@ -1,6 +1,0 @@
-{
-	"@type":"Subset",
-	"Name":"ScoreCardPA",
-	"Alias":"Caption_Default",
-	"Expression":"{[Metrics Indicators].[Metrics Indicators].[Status],[Metrics Indicators].[Metrics Indicators].[Trend],[Metrics Indicators].[Metrics Indicators].[Actual],[Metrics Indicators].[Metrics Indicators].[Target],[Metrics Indicators].[Metrics Indicators].[Tolerance]}"
-}
