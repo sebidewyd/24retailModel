@@ -1,0 +1,14 @@
+{
+	"@type":"Subset",
+	"Name":"Line Item Detail Accounts",
+	"Alias":"Caption_Default",
+	"Elements":
+	[
+		{
+			"@id":"Dimensions('Account')/Hierarchies('Account')/Elements('6400')"
+		},
+		{
+			"@id":"Dimensions('Account')/Hierarchies('Account')/Elements('6410')"
+		}
+	]
+}

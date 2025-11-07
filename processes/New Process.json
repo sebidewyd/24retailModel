@@ -1,0 +1,28 @@
+{
+	"@type":"Process",
+	"Name":"New Process",
+	"HasSecurityAccess":false,
+	"Code@Code.link":"New Process.ti",
+	"UIData":"ReplaceEmptyValues=1\f_ParseParams={&quotskipRows&quot:&quot0&quot&#044&quotlocale&quot:{&quotlanguange&quot:&quoten&quot&#044&quotvariant&quot:&quot&quot&#044&quotcountry&quot:&quotUS&quot}&#044&quotdimensions&quot:[]&#044&quotmeasures&quot:[]&#044&quotnumColumns&quot:&quot1&quot&#044&quothasHeader&quot:&quotfalse&quot}\f_DeployParams={&quotdimensionConflictResolutions&quot:{}&#044&quotclass&quot:&quotDeployParams&quot&#044&quotdataAction&quot:&quotACCUMULATE&quot}\f_importSourceDefinition={\"sourceType\":\"TM1DIMENSIONSUBSET\",\"originalColumns\":null,\"tm1DimensionSubsetSource\":{\"dimensionCaption\":\"Account\",\"originalColumns\":[],\"dimensionSubsetName\":\"[Account].[Default]\",\"excludedColumns\":[],\"columns\":[{\"expression\":null,\"numberOfLongItems\":0,\"columnType\":\"STRING\",\"columnKind\":\"Dimension\",\"totalItemsNum\":0,\"totalValuesLength\":0,\"varName\":\"Account\",\"maxLength\":0,\"minLength\":10,\"columnName\":\"Account\",\"isMeasure\":false,\"numberOfEmptyItems\":0,\"sourceColumn\":0}],\"dimensionName\":\"Account\"},\"locale\":{\"localeIsDefault\":false,\"localeCurrencySymbol\":\"USD\",\"languageCode\":\"en\",\"languageDisplay\":\"English\",\"thousandsSeparator\":\",\",\"localeCode\":\"en_US\",\"localeCurrencyCode\":\"USD\",\"localeDisplay\":\"English (United States)\",\"countryDisplay\":\"United States\",\"countryCode\":\"US\",\"decimalSeparator\":\".\"},\"excludedColumns\":[],\"processName\":\"New Process\",\"columns\":[{\"expression\":null,\"numberOfLongItems\":0,\"columnType\":\"STRING\",\"columnKind\":\"Dimension\",\"totalItemsNum\":0,\"totalValuesLength\":0,\"varName\":\"Account\",\"maxLength\":0,\"minLength\":10,\"columnName\":\"Account\",\"isMeasure\":false,\"numberOfEmptyItems\":0,\"sourceColumn\":0}],\"sourceTypeHasBeenChanged\":false}\f",
+	"VariablesUIData":
+	[
+		"VarType=32\fColType=1165\fIgnoredInputVarName=Account\f_UserVisible=Account\f_UILabel=Account\f_DataType=STRING\f_SourceIndex=0\f"
+	],
+	"DataSource":
+	{
+		"Type":"TM1DimensionSubset",
+		"dataSourceNameForClient":"Account",
+		"dataSourceNameForServer":"Account",
+		"subset":"Default"
+	},
+	"Parameters":
+	[
+		{
+			"Name":"P",
+			"Prompt":"prompt question",
+			"Value":"n",
+			"Type":"String"
+		}
+	],
+	"Variables":[]
+}

@@ -1,0 +1,6 @@
+{
+	"@type":"Subset",
+	"Name":"default",
+	"Alias":"Caption",
+	"Expression":"TM1SubsetAll([Plant])"
+}

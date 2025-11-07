@@ -1,0 +1,17 @@
+{
+	"@type":"Subset",
+	"Name":"GM Review",
+	"Alias":"Caption_Default",
+	"Elements":
+	[
+		{
+			"@id":"Dimensions('Account')/Hierarchies('Account')/Elements('4999')"
+		},
+		{
+			"@id":"Dimensions('Account')/Hierarchies('Account')/Elements('5999')"
+		},
+		{
+			"@id":"Dimensions('Account')/Hierarchies('Account')/Elements('GM')"
+		}
+	]
+}

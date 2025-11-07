@@ -1,0 +1,25 @@
+{
+	"@type":"Cube",
+	"Name":"Workflow Reporting",
+	"Dimensions":
+	[
+		{
+			"@id":"Dimensions('BI Measure')"
+		},
+		{
+			"@id":"Dimensions('organization')"
+		},
+		{
+			"@id":"Dimensions('Workflow Info')"
+		}
+	],
+	"Rules@Code.link":"Workflow Reporting.rules",
+	"MeasuresDimension":
+	{
+		"@id":"Dimensions('BI Measure')"
+	},
+	"Views@Code.links":
+	[
+		"Workflow Reporting.views/All.json"
+	]
+}

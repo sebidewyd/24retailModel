@@ -1,0 +1,15 @@
+{
+	"@type":"Cube",
+	"Name":"}CubeCaptions",
+	"Dimensions":
+	[
+		{
+			"@id":"Dimensions('}Cultures')"
+		},
+		{
+			"@id":"Dimensions('}CaptionMeasures')"
+		}
+	],
+	"Rules@Code.link":"}CubeCaptions.rules",
+	"Views@Code.links":[]
+}

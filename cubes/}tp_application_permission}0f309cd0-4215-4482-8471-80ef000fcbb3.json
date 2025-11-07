@@ -1,0 +1,15 @@
+{
+	"@type":"Cube",
+	"Name":"}tp_application_permission}0f309cd0-4215-4482-8471-80ef000fcbb3",
+	"Dimensions":
+	[
+		{
+			"@id":"Dimensions('}tp_tasks}0f309cd0-4215-4482-8471-80ef000fcbb3')"
+		},
+		{
+			"@id":"Dimensions('}tp_permissions')"
+		}
+	],
+	"Rules@Code.link":"}tp_application_permission}0f309cd0-4215-4482-8471-80ef000fcbb3.rules",
+	"Views@Code.links":[]
+}

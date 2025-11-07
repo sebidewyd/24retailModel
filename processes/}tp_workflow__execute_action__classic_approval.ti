@@ -1,0 +1,207 @@
+#region Prolog
+#******
+#******
+#***BEGIN(Prolog): }tp_workflow__execute_action__classic_approval
+#******
+
+#****** Initiate prolog
+
+#*** Initiate Log File
+cConfigDim = '}tp_config';
+If (DimensionExists(cConfigDim) = 1);
+	cGenerateLog = ATTRS(cConfigDim, 'Generate TI Log', 'String Value');
+Else;
+	cGenerateLog = 'N';
+EndIf;
+
+cTM1Process = GetProcessName();
+StringGlobalVariable('gPrologLog');
+StringGlobalVariable('gEpilogLog');
+StringGlobalVariable('gDataLog');
+StringGlobalVariable('gMetadataLog');
+
+If (cGenerateLog @= 'Y' % cGenerateLog @= 'T');
+
+	#*** Call TI process
+	tReturnValue = ExecuteProcess('}tp_get_log_file_names',
+		'pExecutionId', pExecutionId, 
+		'pProcess', cTM1Process, 
+		'pControl', 'Y');
+	If (tReturnValue <> ProcessExitNormal());
+		ProcessError;
+	EndIf;
+EndIf;
+
+cPrologLog = gPrologLog;
+cEpilogLog = gEpilogLog;
+cDataLog = gDataLog;
+cMetadataLog = gMetadataLog;
+
+#*** Set Log File
+cTM1Log = cPrologLog;
+
+#*** Write to Log File
+If (cGenerateLog @= 'Y');
+	TextOutput(cTM1Log, TIMST(NOW, '\Y-\m-\d \h:\i:\s'),
+		'pExecutionId=' | pExecutionId,
+		'pTime=' | pTime,
+		'pAppId=' | pAppId,
+		'pNode=' | pNode,
+		'pAction=' | pAction);
+EndIf;
+
+#****** Action Dispatcher
+If (pAction @= 'ENTER');
+
+	#*** Call TI process
+	tReturnValue = ExecuteProcess('}tp_workflow__enter__classic_approval',
+		'pExecutionId', pExecutionId, 
+		'pTime', pTime, 
+		'pAppId', pAppId, 
+		'pNode', pNode);
+	If (tReturnValue <> ProcessExitNormal());
+		ProcessError;
+	EndIf;
+ElseIf (pAction @= 'OWN');
+
+	#*** Call TI process
+	tReturnValue = ExecuteProcess('}tp_workflow__own__classic_approval',
+		'pExecutionId', pExecutionId, 
+		'pTime', pTime, 
+		'pAppId', pAppId, 
+		'pNode', pNode);
+	If (tReturnValue <> ProcessExitNormal());
+		ProcessError;
+	EndIf;
+ElseIf (pAction @= 'CHECKBOUNCEMSG');
+
+	#*** Call TI process
+	tReturnValue = ExecuteProcess('}tp_workflow__check-bounce-message__classic_approval',
+		'pExecutionId', pExecutionId, 
+		'pTime', pTime, 
+		'pAppId', pAppId, 
+		'pNode', pNode);
+	If (tReturnValue <> ProcessExitNormal());
+		ProcessError;
+	EndIf;
+ElseIf (pAction @= 'RELEASE');
+
+	#*** Call TI process
+	tReturnValue = ExecuteProcess('}tp_workflow__release__classic_approval',
+		'pExecutionId', pExecutionId, 
+		'pTime', pTime, 
+		'pAppId', pAppId, 
+		'pNode', pNode);
+	If (tReturnValue <> ProcessExitNormal());
+		ProcessError;
+	EndIf;
+ElseIf (pAction @= 'SAVE');
+
+	#*** Call TI process
+	tReturnValue = ExecuteProcess('}tp_workflow__save__classic_approval',
+		'pExecutionId', pExecutionId, 
+		'pTime', pTime, 
+		'pAppId', pAppId, 
+		'pNode', pNode);
+	If (tReturnValue <> ProcessExitNormal());
+		ProcessError;
+	EndIf;
+ElseIf (pAction @= 'SUBMIT');
+
+	#*** Call TI process
+	tReturnValue = ExecuteProcess('}tp_workflow__submit__classic_approval',
+		'pExecutionId', pExecutionId, 
+		'pTime', pTime, 
+		'pAppId', pAppId, 
+		'pNode', pNode);
+	If (tReturnValue <> ProcessExitNormal());
+		ProcessError;
+	EndIf;
+ElseIf (pAction @= 'SUBMITCHILDREN');
+
+	#*** Call TI process
+	tReturnValue = ExecuteProcess('}tp_workflow__submit-leaf-children__classic_approval',
+		'pExecutionId', pExecutionId, 
+		'pTime', pTime, 
+		'pAppId', pAppId, 
+		'pNode', pNode);
+	If (tReturnValue <> ProcessExitNormal());
+		ProcessError;
+	EndIf;
+ElseIf (pAction @= 'REJECT');
+
+	#*** Call TI process
+	tReturnValue = ExecuteProcess('}tp_workflow__reject__classic_approval',
+		'pExecutionId', pExecutionId, 
+		'pTime', pTime, 
+		'pAppId', pAppId, 
+		'pNode', pNode);
+	If (tReturnValue <> ProcessExitNormal());
+		ProcessError;
+	EndIf;
+ElseIf (pAction @= 'CHECKREJECTBOUNCE');
+
+	#*** Call TI process
+	tReturnValue = ExecuteProcess('}tp_workflow__check-reject-bounce__classic_approval',
+		'pExecutionId', pExecutionId, 
+		'pTime', pTime, 
+		'pAppId', pAppId, 
+		'pNode', pNode);
+	If (tReturnValue <> ProcessExitNormal());
+		ProcessError;
+	EndIf;
+ElseIf (pAction @= 'REJECTOWN');
+
+	#*** Call TI process
+	tReturnValue = ExecuteProcess('}tp_workflow__reject-own__classic_approval',
+		'pExecutionId', pExecutionId, 
+		'pTime', pTime, 
+		'pAppId', pAppId, 
+		'pNode', pNode);
+	If (tReturnValue <> ProcessExitNormal());
+		ProcessError;
+	EndIf;
+ElseIf (pAction @= 'OFFLINE');
+
+	#*** Call TI process
+	tReturnValue = ExecuteProcess('}tp_workflow__offline__classic_approval',
+		'pExecutionId', pExecutionId, 
+		'pTime', pTime, 
+		'pAppId', pAppId, 
+		'pNode', pNode);
+	If (tReturnValue <> ProcessExitNormal());
+		ProcessError;
+	EndIf;
+ElseIf (pAction @= 'ONLINE');
+
+	#*** Call TI process
+	tReturnValue = ExecuteProcess('}tp_workflow__online__classic_approval',
+		'pExecutionId', pExecutionId, 
+		'pTime', pTime, 
+		'pAppId', pAppId, 
+		'pNode', pNode);
+	If (tReturnValue <> ProcessExitNormal());
+		ProcessError;
+	EndIf;
+ElseIf (pAction @= 'LEAVE');
+
+	#*** Call TI process
+	tReturnValue = ExecuteProcess('}tp_workflow__leave__classic_approval',
+		'pExecutionId', pExecutionId, 
+		'pTime', pTime, 
+		'pAppId', pAppId, 
+		'pNode', pNode);
+	If (tReturnValue <> ProcessExitNormal());
+		ProcessError;
+	EndIf;
+EndIf;
+
+#*** Write to Log File
+If (cGenerateLog @= 'Y');
+	TextOutput(cTM1Log, TIMST(NOW, '\Y-\m-\d \h:\i:\s'),
+		'The end has been reached.');
+EndIf;
+#******
+#***END(Prolog): }tp_workflow__execute_action__classic_approval
+#******
+#endregion

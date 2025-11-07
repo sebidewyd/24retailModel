@@ -1,0 +1,12 @@
+{
+	"@type":"Dimension",
+	"Name":"}Link_Emp_3AJCAsmpt",
+	"Hierarchies@Code.links":
+	[
+		"}Link_Emp_3AJCAsmpt.hierarchies/}Link_Emp_3AJCAsmpt.json"
+	],
+	"DefaultHierarchy":
+	{
+		"@id":"Dimensions('}Link_Emp_3AJCAsmpt')/Hierarchies('}Link_Emp_3AJCAsmpt')"
+	}
+}

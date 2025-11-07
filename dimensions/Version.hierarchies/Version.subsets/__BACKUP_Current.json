@@ -1,0 +1,20 @@
+{
+	"@type":"Subset",
+	"Name":"__BACKUP_Current",
+	"Alias":"Caption_Default",
+	"Elements":
+	[
+		{
+			"@id":"Dimensions('Version')/Hierarchies('Version')/Elements('Version 1')"
+		},
+		{
+			"@id":"Dimensions('Version')/Hierarchies('Version')/Elements('Actual')"
+		},
+		{
+			"@id":"Dimensions('Version')/Hierarchies('Version')/Elements('Variance')"
+		},
+		{
+			"@id":"Dimensions('Version')/Hierarchies('Version')/Elements('Variance%')"
+		}
+	]
+}

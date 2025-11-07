@@ -1,0 +1,12 @@
+{
+	"@type":"Dimension",
+	"Name":"}Link_Metrics _3C Income Statement",
+	"Hierarchies@Code.links":
+	[
+		"}Link_Metrics _3C Income Statement.hierarchies/}Link_Metrics _3C Income Statement.json"
+	],
+	"DefaultHierarchy":
+	{
+		"@id":"Dimensions('}Link_Metrics _3C Income Statement')/Hierarchies('}Link_Metrics _3C Income Statement')"
+	}
+}

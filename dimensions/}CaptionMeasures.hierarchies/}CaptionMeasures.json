@@ -1,0 +1,16 @@
+{
+	"@type":"Hierarchy",
+	"Name":"}CaptionMeasures",
+	"Elements":
+	[
+		{
+			"Name":"Input",
+			"Type":"String"
+		},
+		{
+			"Name":"Value",
+			"Type":"String"
+		}
+	],
+	"Subsets@Code.links":[]
+}

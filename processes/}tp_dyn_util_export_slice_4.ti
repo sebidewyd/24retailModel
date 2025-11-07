@@ -1,0 +1,50 @@
+#region Prolog
+#******
+#******
+#***BEGIN(Prolog): }tp_dyn_util_export_slice_4
+#******
+DatasourceASCIIDelimiter = char(StringToNumber(pDelimiter));
+DatasourceASCIIQuoteCharacter = char(StringToNumber(pQuote));
+SetOutputCharacterSet(pBlob | '.blb', 'TM1CS_UTF8');
+If (CubeExists(pCube) = 0);
+ProcessError;
+EndIf;
+cDim1 = TABDIM(pCube, 1);
+cDimSize1= DIMSIZ(cDim1);
+cDim2 = TABDIM(pCube, 2);
+cDimSize2= DIMSIZ(cDim2);
+cDim3 = TABDIM(pCube, 3);
+cDimSize3= DIMSIZ(cDim3);
+cDim4 = TABDIM(pCube, 4);
+cDimSize4= DIMSIZ(cDim4);
+vIndex1= 1;
+While (vIndex1 <= cDimSize1);
+vElement1 = DIMNM(cDim1, vIndex1);
+vElement2 = '1627d785-433f-4e5a-89bd-26f39a90e7af';
+vIndex3= 1;
+While (vIndex3 <= cDimSize3);
+vElement3 = DIMNM(cDim3, vIndex3);
+vElement4 = 'Rights';
+If (DTYPE(cDim4, vElement4) @= 'S');
+vValue = CellGetS(pCube, vElement1, vElement2, vElement3, vElement4);
+Else;
+vValue = NumberToString(CellGetN(pCube, vElement1, vElement2, vElement3, vElement4));
+EndIf;
+If (SCAN('.blb', pBlob) = 0);
+pBlob = pBlob | '.blb';
+EndIf;
+If (vValue @<> '');
+If (pAlt @= 'Y');
+TextOutput(pBlob, vValue, vElement1, vElement3);
+Else;
+TextOutput(pBlob, vElement1, vElement3, vValue);
+EndIf;
+EndIf;
+vIndex3 = vIndex3 + 1;
+End;
+vIndex1 = vIndex1 + 1;
+End;
+#******
+#***END(Prolog): }tp_dyn_util_export_slice_4
+#******
+#endregion

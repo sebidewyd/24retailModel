@@ -1,0 +1,11 @@
+{
+	"@type":"Subset",
+	"Name":"Compare",
+	"Alias":"Caption_Default",
+	"Elements":
+	[
+		{
+			"@id":"Dimensions('product')/Hierarchies('product')/Elements('21003')"
+		}
+	]
+}

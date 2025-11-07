@@ -1,0 +1,11 @@
+{
+	"@type":"Subset",
+	"Name":"zCopyFrom",
+	"Alias":"Caption_Default",
+	"Elements":
+	[
+		{
+			"@id":"Dimensions('product')/Hierarchies('product')/Elements('Product Total')"
+		}
+	]
+}

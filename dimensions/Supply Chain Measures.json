@@ -1,0 +1,12 @@
+{
+	"@type":"Dimension",
+	"Name":"Supply Chain Measures",
+	"Hierarchies@Code.links":
+	[
+		"Supply Chain Measures.hierarchies/Supply Chain Measures.json"
+	],
+	"DefaultHierarchy":
+	{
+		"@id":"Dimensions('Supply Chain Measures')/Hierarchies('Supply Chain Measures')"
+	}
+}

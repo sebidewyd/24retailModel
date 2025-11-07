@@ -1,0 +1,23 @@
+{
+	"@type":"Cube",
+	"Name":"Calendar",
+	"Dimensions":
+	[
+		{
+			"@id":"Dimensions('Calendar')"
+		},
+		{
+			"@id":"Dimensions('String')"
+		}
+	],
+	"Rules@Code.link":"Calendar.rules",
+	"ViewStorageMaxMemory":999999999,
+	"ViewStorageMinTime":1,
+	"Views@Code.links":
+	[
+		"Calendar.views/All.json",
+		"Calendar.views/Calendar.json",
+		"Calendar.views/Default.json",
+		"Calendar.views/Update Forecast Month.json"
+	]
+}

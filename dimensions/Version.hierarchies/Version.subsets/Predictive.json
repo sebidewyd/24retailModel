@@ -1,0 +1,28 @@
+{
+	"@type":"Subset",
+	"Name":"Predictive",
+	"Elements":
+	[
+		{
+			"@id":"Dimensions('Version')/Hierarchies('Version')/Elements('Variance%')"
+		},
+		{
+			"@id":"Dimensions('Version')/Hierarchies('Version')/Elements('Explanation')"
+		},
+		{
+			"@id":"Dimensions('Version')/Hierarchies('Version')/Elements('Performance Variance')"
+		},
+		{
+			"@id":"Dimensions('Version')/Hierarchies('Version')/Elements('Ccy Exchange Variance')"
+		},
+		{
+			"@id":"Dimensions('Version')/Hierarchies('Version')/Elements('Dashboard')"
+		},
+		{
+			"@id":"Dimensions('Version')/Hierarchies('Version')/Elements('DashboardCA')"
+		},
+		{
+			"@id":"Dimensions('Version')/Hierarchies('Version')/Elements('Actual')"
+		}
+	]
+}

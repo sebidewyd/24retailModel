@@ -1,0 +1,12 @@
+{
+	"@type":"Dimension",
+	"Name":"}MH_Metrics",
+	"Hierarchies@Code.links":
+	[
+		"}MH_Metrics.hierarchies/}MH_Metrics.json"
+	],
+	"DefaultHierarchy":
+	{
+		"@id":"Dimensions('}MH_Metrics')/Hierarchies('}MH_Metrics')"
+	}
+}

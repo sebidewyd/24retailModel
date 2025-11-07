@@ -1,0 +1,36 @@
+{
+	"@type":"NativeView",
+	"Name":"All",
+	"Columns":
+	[
+		{
+			"Subset":
+			{
+				"Hierarchy":
+				{
+					"@id":"Dimensions('String')/Hierarchies('String')"
+				},
+				"Alias":"Caption_Default",
+				"Expression":"[String].MEMBERS"
+			}
+		}
+	],
+	"Rows":
+	[
+		{
+			"Subset":
+			{
+				"Hierarchy":
+				{
+					"@id":"Dimensions('Calendar')/Hierarchies('Calendar')"
+				},
+				"Alias":"Caption_Default",
+				"Expression":"[Calendar].MEMBERS"
+			}
+		}
+	],
+	"Titles":[],
+	"SuppressEmptyColumns":false,
+	"SuppressEmptyRows":false,
+	"FormatString":"0.00"
+}

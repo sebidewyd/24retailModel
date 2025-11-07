@@ -1,0 +1,47 @@
+{
+	"@type":"Hierarchy",
+	"Name":"}ProgressTimings",
+	"Elements":
+	[
+		{
+			"Name":"DIMENSION-Plant",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"CUBE-Rate BOM",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"DIMENSION-Rate Measure",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"CUBE-Supply Chain",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"DIMENSION-Supply Chain Measures",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"DIMENSION-Revenue",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"DIMENSION-RevenueAsmpt",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"PROCESS-New Process",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"DIMENSION-Month",
+			"Type":"Numeric"
+		}
+	],
+	"Subsets@Code.links":
+	[
+		"}ProgressTimings.subsets/All Members.json"
+	]
+}

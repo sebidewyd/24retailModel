@@ -1,0 +1,12 @@
+{
+	"@type":"Dimension",
+	"Name":"TrxMeasures",
+	"Hierarchies@Code.links":
+	[
+		"TrxMeasures.hierarchies/TrxMeasures.json"
+	],
+	"DefaultHierarchy":
+	{
+		"@id":"Dimensions('TrxMeasures')/Hierarchies('TrxMeasures')"
+	}
+}

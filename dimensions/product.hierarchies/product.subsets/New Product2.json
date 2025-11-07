@@ -1,0 +1,6 @@
+{
+	"@type":"Subset",
+	"Name":"New Product2",
+	"Alias":"Caption_Default",
+	"Expression":"{ [Product].[New]}"
+}

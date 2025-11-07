@@ -1,0 +1,43 @@
+#region Prolog
+#******
+#******
+#***BEGIN(Prolog): }tp_dyn_util_instant_action
+#******
+cCognosEveryoneGroup = 'CAMID("::Everyone")';
+cTpEveryoneGroup = '}tp_Everyone';
+If (DIMIX('}Groups', cCognosEveryoneGroup) <> 0);
+CellPutS('READ', '}ProcessSecurity', '}tp_workflow__enter__classic_approval', cCognosEveryoneGroup);
+CellPutS('READ', '}ProcessSecurity', '}tp_workflow__own__classic_approval', cCognosEveryoneGroup);
+CellPutS('READ', '}ProcessSecurity', '}tp_workflow__check-bounce-message__classic_approval', cCognosEveryoneGroup);
+CellPutS('READ', '}ProcessSecurity', '}tp_workflow__release__classic_approval', cCognosEveryoneGroup);
+CellPutS('READ', '}ProcessSecurity', '}tp_workflow__save__classic_approval', cCognosEveryoneGroup);
+CellPutS('READ', '}ProcessSecurity', '}tp_workflow__submit__classic_approval', cCognosEveryoneGroup);
+CellPutS('READ', '}ProcessSecurity', '}tp_workflow__submit-leaf-children__classic_approval', cCognosEveryoneGroup);
+CellPutS('READ', '}ProcessSecurity', '}tp_workflow__reject__classic_approval', cCognosEveryoneGroup);
+CellPutS('READ', '}ProcessSecurity', '}tp_workflow__check-reject-bounce__classic_approval', cCognosEveryoneGroup);
+CellPutS('READ', '}ProcessSecurity', '}tp_workflow__reject-own__classic_approval', cCognosEveryoneGroup);
+CellPutS('READ', '}ProcessSecurity', '}tp_workflow__offline__classic_approval', cCognosEveryoneGroup);
+CellPutS('READ', '}ProcessSecurity', '}tp_workflow__online__classic_approval', cCognosEveryoneGroup);
+CellPutS('READ', '}ProcessSecurity', '}tp_workflow__leave__classic_approval', cCognosEveryoneGroup);
+CellPutS('READ', '}ProcessSecurity', '}tp_workflow__execute_action__classic_approval', cCognosEveryoneGroup);
+EndIf;
+If (DIMIX('}Groups', cTpEveryoneGroup) <> 0);
+CellPutS('READ', '}ProcessSecurity', '}tp_workflow__enter__classic_approval', cTpEveryoneGroup);
+CellPutS('READ', '}ProcessSecurity', '}tp_workflow__own__classic_approval', cTpEveryoneGroup);
+CellPutS('READ', '}ProcessSecurity', '}tp_workflow__check-bounce-message__classic_approval', cTpEveryoneGroup);
+CellPutS('READ', '}ProcessSecurity', '}tp_workflow__release__classic_approval', cTpEveryoneGroup);
+CellPutS('READ', '}ProcessSecurity', '}tp_workflow__save__classic_approval', cTpEveryoneGroup);
+CellPutS('READ', '}ProcessSecurity', '}tp_workflow__submit__classic_approval', cTpEveryoneGroup);
+CellPutS('READ', '}ProcessSecurity', '}tp_workflow__submit-leaf-children__classic_approval', cTpEveryoneGroup);
+CellPutS('READ', '}ProcessSecurity', '}tp_workflow__reject__classic_approval', cTpEveryoneGroup);
+CellPutS('READ', '}ProcessSecurity', '}tp_workflow__check-reject-bounce__classic_approval', cTpEveryoneGroup);
+CellPutS('READ', '}ProcessSecurity', '}tp_workflow__reject-own__classic_approval', cTpEveryoneGroup);
+CellPutS('READ', '}ProcessSecurity', '}tp_workflow__offline__classic_approval', cTpEveryoneGroup);
+CellPutS('READ', '}ProcessSecurity', '}tp_workflow__online__classic_approval', cTpEveryoneGroup);
+CellPutS('READ', '}ProcessSecurity', '}tp_workflow__leave__classic_approval', cTpEveryoneGroup);
+CellPutS('READ', '}ProcessSecurity', '}tp_workflow__execute_action__classic_approval', cTpEveryoneGroup);
+EndIf;
+#******
+#***END(Prolog): }tp_dyn_util_instant_action
+#******
+#endregion

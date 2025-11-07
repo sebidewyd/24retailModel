@@ -1,0 +1,9 @@
+#region Prolog
+i=1;
+while (i<=500000); 
+
+    ViewConstruct( 'Compensation Reporting', 'Compensation by Employee' );
+
+    i=i+1; 
+end;
+#endregion

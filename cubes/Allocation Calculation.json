@@ -1,0 +1,40 @@
+{
+	"@type":"Cube",
+	"Name":"Allocation Calculation",
+	"Dimensions":
+	[
+		{
+			"@id":"Dimensions('organization')"
+		},
+		{
+			"@id":"Dimensions('Allocation List')"
+		},
+		{
+			"@id":"Dimensions('Year')"
+		},
+		{
+			"@id":"Dimensions('Month')"
+		},
+		{
+			"@id":"Dimensions('Version')"
+		},
+		{
+			"@id":"Dimensions('Allocation Calculation')"
+		}
+	],
+	"Rules@Code.link":"Allocation Calculation.rules",
+	"ViewStorageMaxMemory":999999999,
+	"ViewStorageMinTime":1,
+	"Views@Code.links":
+	[
+		"Allocation Calculation.views/All.json",
+		"Allocation Calculation.views/Allocation Calculation.json",
+		"Allocation Calculation.views/Allocation Summary.json",
+		"Allocation Calculation.views/Default.json",
+		"Allocation Calculation.views/DEMO_1_Driver.json",
+		"Allocation Calculation.views/DEMO_3_Áttekintő.json",
+		"Allocation Calculation.views/Drill_Allocation Receivers.json",
+		"Allocation Calculation.views/Munka13.json",
+		"Allocation Calculation.views/Pred_DEMO.json"
+	]
+}

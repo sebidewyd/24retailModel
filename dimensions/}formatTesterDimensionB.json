@@ -1,0 +1,12 @@
+{
+	"@type":"Dimension",
+	"Name":"}formatTesterDimensionB",
+	"Hierarchies@Code.links":
+	[
+		"}formatTesterDimensionB.hierarchies/}formatTesterDimensionB.json"
+	],
+	"DefaultHierarchy":
+	{
+		"@id":"Dimensions('}formatTesterDimensionB')/Hierarchies('}formatTesterDimensionB')"
+	}
+}

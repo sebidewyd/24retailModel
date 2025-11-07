@@ -1,0 +1,15 @@
+{
+	"@type":"Hierarchy",
+	"Name":"}ModelProperties",
+	"Elements":
+	[
+		{
+			"Name":"Model",
+			"Type":"Consolidated"
+		}
+	],
+	"Subsets@Code.links":
+	[
+		"}ModelProperties.subsets/All Members.json"
+	]
+}

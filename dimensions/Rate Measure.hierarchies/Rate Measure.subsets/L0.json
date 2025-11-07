@@ -1,0 +1,6 @@
+{
+	"@type":"Subset",
+	"Name":"L0",
+	"Alias":"Caption",
+	"Expression":"{TM1FILTERBYLEVEL( {TM1SUBSETALL( [Rate Measure] )}, 0)}"
+}

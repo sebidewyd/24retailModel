@@ -1,0 +1,32 @@
+{
+	"@type":"Process",
+	"Name":"}tp_delete_approval_security_cube",
+	"HasSecurityAccess":false,
+	"Code@Code.link":"}tp_delete_approval_security_cube.ti",
+	"DataSource":
+	{
+		"Type":"None"
+	},
+	"Parameters":
+	[
+		{
+			"Name":"pExecutionId",
+			"Prompt":"",
+			"Value":"None",
+			"Type":"String"
+		},
+		{
+			"Name":"pApproval",
+			"Prompt":"",
+			"Value":"None",
+			"Type":"String"
+		},
+		{
+			"Name":"pControl",
+			"Prompt":"",
+			"Value":"Y",
+			"Type":"String"
+		}
+	],
+	"Variables":[]
+}

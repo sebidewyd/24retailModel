@@ -1,0 +1,89 @@
+#region Prolog
+
+
+#################################################################
+## IBM Confidential
+##
+## OCO Source Materials
+##
+## BI and PM: pmpsvc
+##
+## (C) Copyright IBM Corp. 2008, 2009, 2010
+##
+## The source code for this program is not published or otherwise
+## divested of its trade secrets, irrespective of what has been
+## deposited with the U.S. Copyright Office.
+#################################################################
+
+cControlPrefix = '';
+If (pControl @= 'Y');
+	cControlPrefix = '}';
+EndIf;
+
+vDimRights = cControlPrefix | 'tp_rights';
+vDimRightsMeasures = cControlPrefix | 'tp_security_measures';
+vDimRightsUpdateMeasures = cControlPrefix | 'tp_security_update_measures';
+vGroups = '}Groups';
+vCube = cControlPrefix | 'tp_application_security}' | pAppId;
+vCubeUpdates = cControlPrefix | 'tp_application_security_update}' | pAppId;
+
+if (CubeExists(vCube) = 1);
+	CubeDestroy(vCube);
+endif;
+
+if (CubeExists(vCubeUpdates) = 1);
+	CubeDestroy(vCubeUpdates);
+endif;
+
+if (DimensionExists(vDimRights) = 1);
+	DimensionDestroy(vDimRights);
+endif;
+DimensionCreate(vDimRights);
+
+DimensionElementInsert(vDimRights, '','VIEW', 'S');
+DimensionElementInsert(vDimRights, '','EDIT', 'S');
+DimensionElementInsert(vDimRights, '','REVIEW', 'S');
+DimensionElementInsert(vDimRights, '','SUBMIT', 'S');
+
+if (DimensionExists(vDimRightsMeasures) = 1);
+	DimensionDestroy(vDimRightsMeasures);
+endif;
+DimensionCreate(vDimRightsMeasures);
+
+DimensionElementInsert(vDimRightsMeasures, '','Rights', 'S');
+DimensionElementInsert(vDimRightsMeasures, '','ViewDepth', 'S');
+DimensionElementInsert(vDimRightsMeasures, '','ReviewDepth', 'S');
+
+if (DimensionExists(vDimRightsUpdateMeasures) = 1);
+	DimensionDestroy(vDimRightsUpdateMeasures);
+endif;
+DimensionCreate(vDimRightsUpdateMeasures);
+DimensionElementInsert(vDimRightsUpdateMeasures, '','Incremental', 'S');
+DimensionElementInsert(vDimRightsUpdateMeasures, '','Processed', 'S');
+
+
+#endregion
+#region Epilog
+
+
+#################################################################
+## IBM Confidential
+##
+## OCO Source Materials
+##
+## BI and PM: pmpsvc
+##
+## (C) Copyright IBM Corp. 2008, 2009, 2010
+##
+## The source code for this program is not published or otherwise
+## divested of its trade secrets, irrespective of what has been
+## deposited with the U.S. Copyright Office.
+#################################################################
+
+CubeCreate(vCube, pApprovalDim, vGroups, vDimRights, vDimRightsMeasures);
+CubeSetLogChanges(vCube, 1);
+
+CubeCreate(vCubeUpdates, pApprovalDim, vGroups, vDimRightsUpdateMeasures);
+CubeSetLogChanges(vCubeUpdates, 1);
+
+#endregion

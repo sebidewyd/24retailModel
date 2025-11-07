@@ -1,0 +1,12 @@
+{
+	"@type":"Dimension",
+	"Name":"FcstMethod",
+	"Hierarchies@Code.links":
+	[
+		"FcstMethod.hierarchies/FcstMethod.json"
+	],
+	"DefaultHierarchy":
+	{
+		"@id":"Dimensions('FcstMethod')/Hierarchies('FcstMethod')"
+	}
+}

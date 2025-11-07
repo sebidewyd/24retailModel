@@ -1,0 +1,27 @@
+{
+	"@type":"Process",
+	"Name":"reset_alias",
+	"HasSecurityAccess":true,
+	"Code@Code.link":"reset_alias.ti",
+	"UIData":"_ParseParams={&quotmeasures&quot:[]&#044&quothasHeader&quot:&quotfalse&quot&#044&quotnumColumns&quot:&quot0&quot&#044&quotskipRows&quot:&quot0&quot&#044&quotlocale&quot:{&quotlanguange&quot:&quoten&quot&#044&quotvariant&quot:&quot&quot&#044&quotcountry&quot:&quotUS&quot}&#044&quotdimensions&quot:[]}\f_DeployParams={&quotdataAction&quot:&quotACCUMULATE&quot&#044&quotclass&quot:&quotDeployParams&quot&#044&quotdimensionConflictResolutions&quot:{}}\f",
+	"DataSource":
+	{
+		"Type":"None"
+	},
+	"Parameters":
+	[
+		{
+			"Name":"pDimensionName",
+			"Prompt":"Dimension Name",
+			"Value":"",
+			"Type":"String"
+		},
+		{
+			"Name":"pSubsetName",
+			"Prompt":"Subset Name",
+			"Value":"",
+			"Type":"String"
+		}
+	],
+	"Variables":[]
+}

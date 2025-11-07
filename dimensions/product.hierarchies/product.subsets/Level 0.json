@@ -1,0 +1,6 @@
+{
+	"@type":"Subset",
+	"Name":"Level 0",
+	"Alias":"Caption_Default",
+	"Expression":"{TM1FILTERBYLEVEL( {TM1SUBSETALL( [product] )}, 0)}"
+}

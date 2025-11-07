@@ -1,0 +1,32 @@
+{
+	"@type":"Subset",
+	"Name":"Groups",
+	"Alias":"Caption_Default",
+	"Elements":
+	[
+		{
+			"@id":"Dimensions('product')/Hierarchies('product')/Elements('21000')"
+		},
+		{
+			"@id":"Dimensions('product')/Hierarchies('product')/Elements('22000')"
+		},
+		{
+			"@id":"Dimensions('product')/Hierarchies('product')/Elements('23000')"
+		},
+		{
+			"@id":"Dimensions('product')/Hierarchies('product')/Elements('31000')"
+		},
+		{
+			"@id":"Dimensions('product')/Hierarchies('product')/Elements('32000')"
+		},
+		{
+			"@id":"Dimensions('product')/Hierarchies('product')/Elements('33000')"
+		},
+		{
+			"@id":"Dimensions('product')/Hierarchies('product')/Elements('41000')"
+		},
+		{
+			"@id":"Dimensions('product')/Hierarchies('product')/Elements('42000')"
+		}
+	]
+}

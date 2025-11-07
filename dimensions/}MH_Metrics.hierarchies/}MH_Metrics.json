@@ -1,0 +1,16 @@
+{
+	"@type":"Hierarchy",
+	"Name":"}MH_Metrics",
+	"ElementsSortType":"ByHierarchy",
+	"Elements":
+	[
+		{
+			"Name":"Indicator Subset",
+			"Type":"String"
+		}
+	],
+	"Subsets@Code.links":
+	[
+		"}MH_Metrics.subsets/All Members.json"
+	]
+}

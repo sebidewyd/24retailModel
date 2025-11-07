@@ -1,0 +1,12 @@
+{
+	"@type":"Dimension",
+	"Name":"}Backup_Organization Reporting",
+	"Hierarchies@Code.links":
+	[
+		"}Backup_Organization Reporting.hierarchies/}Backup_Organization Reporting.json"
+	],
+	"DefaultHierarchy":
+	{
+		"@id":"Dimensions('}Backup_Organization Reporting')/Hierarchies('}Backup_Organization Reporting')"
+	}
+}

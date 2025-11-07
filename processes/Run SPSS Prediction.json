@@ -1,0 +1,27 @@
+{
+	"@type":"Process",
+	"Name":"Run SPSS Prediction",
+	"HasSecurityAccess":false,
+	"Code@Code.link":"Run SPSS Prediction.ti",
+	"UIData":"CubeAction=1511\fDataAction=1503\fCubeLogChanges=0\f",
+	"DataSource":
+	{
+		"Type":"None"
+	},
+	"Parameters":
+	[
+		{
+			"Name":"pVersion",
+			"Prompt":"Version",
+			"Value":"Predictive",
+			"Type":"String"
+		},
+		{
+			"Name":"pMonth",
+			"Prompt":"Forecast Month",
+			"Value":"Apr",
+			"Type":"String"
+		}
+	],
+	"Variables":[]
+}

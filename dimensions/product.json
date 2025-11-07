@@ -1,0 +1,17 @@
+{
+	"@type":"Dimension",
+	"Name":"product",
+	"AllLeavesHierarchyName":"Leaves",
+	"Hierarchies@Code.links":
+	[
+		"product.hierarchies/product.json",
+		"product.hierarchies/Product Color.json",
+		"product.hierarchies/Product Size.json",
+		"product.hierarchies/Storage Capacity.json",
+		"product.hierarchies/Storage Type.json"
+	],
+	"DefaultHierarchy":
+	{
+		"@id":"Dimensions('product')/Hierarchies('product')"
+	}
+}

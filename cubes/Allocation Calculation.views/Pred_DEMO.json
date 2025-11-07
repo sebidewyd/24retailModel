@@ -1,0 +1,40 @@
+{
+	"@type":"MDXView",
+	"Name":"Pred_DEMO",
+	"MDX@Code.link":"Pred_DEMO.mdx",
+	"Meta" : 
+	{
+		"Aliases" : 
+		{
+			"[Version].[Version]" : "MEMBER_NAME",
+			"[Year].[Year]" : "Caption_Default",
+			"[organization].[organization]" : "Caption_Base"
+		},
+		"ContextSets" : 
+		{
+			"[Allocation Calculation].[Allocation Calculation]" : 
+			{
+				"Expression" : "{[Allocation Calculation].[Allocation Calculation].[Allocation Amount], [Allocation Calculation].[Allocation Calculation].[Exclude Entity], [Allocation Calculation].[Allocation Calculation].[Driver], [Allocation Calculation].[Allocation Calculation].[Total Driver], [Allocation Calculation].[Allocation Calculation].[Ratio], [Allocation Calculation].[Allocation Calculation].[Allocated Amount], [Allocation Calculation].[Allocation Calculation].[Credit Amount], [Allocation Calculation].[Allocation Calculation].[Source Entity], [Allocation Calculation].[Allocation Calculation].[Source Account], [Allocation Calculation].[Allocation Calculation].[Allocation Driver]}"
+			},
+			"[Version].[Version]" : 
+			{
+				"IsPublic" : true,
+				"SubsetName" : "Predictive"
+			},
+			"[organization].[organization]" : 
+			{
+				"IsPublic" : true,
+				"SubsetName" : "Default"
+			}
+		},
+		"ExpandAboves" : 
+		{
+			"[Allocation Calculation].[Allocation Calculation]" : false,
+			"[Allocation List].[Allocation List]" : false,
+			"[Month].[Month]" : false,
+			"[Version].[Version]" : false,
+			"[Year].[Year]" : false,
+			"[organization].[organization]" : false
+		}
+	}
+}

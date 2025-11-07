@@ -1,0 +1,42 @@
+{
+	"@type":"Cube",
+	"Name":"Metrics",
+	"Dimensions":
+	[
+		{
+			"@id":"Dimensions('Metrics')"
+		},
+		{
+			"@id":"Dimensions('organization')"
+		},
+		{
+			"@id":"Dimensions('Year')"
+		},
+		{
+			"@id":"Dimensions('Month')"
+		},
+		{
+			"@id":"Dimensions('Metrics Indicators')"
+		}
+	],
+	"Rules@Code.link":"Metrics.rules",
+	"CellSecurityDefaultValue":"None",
+	"MeasuresDimension":
+	{
+		"@id":"Dimensions('Metrics Indicators')"
+	},
+	"Views@Code.links":
+	[
+		"Metrics.views/24Retail Plan.json",
+		"Metrics.views/All.json",
+		"Metrics.views/Budget Performance Chart.json",
+		"Metrics.views/Budget Performance Scorecard.json",
+		"Metrics.views/Default.json",
+		"Metrics.views/Forecast Performance Chart.json",
+		"Metrics.views/Forecast Performance Scorecard.json",
+		"Metrics.views/Impact Analysis.json",
+		"Metrics.views/Performance Scorecard.json",
+		"Metrics.views/Performance Scorecard Chart.json",
+		"Metrics.views/Review.json"
+	]
+}

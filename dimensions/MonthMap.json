@@ -1,0 +1,12 @@
+{
+	"@type":"Dimension",
+	"Name":"MonthMap",
+	"Hierarchies@Code.links":
+	[
+		"MonthMap.hierarchies/MonthMap.json"
+	],
+	"DefaultHierarchy":
+	{
+		"@id":"Dimensions('MonthMap')/Hierarchies('MonthMap')"
+	}
+}

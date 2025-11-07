@@ -1,0 +1,12 @@
+{
+	"@type":"Dimension",
+	"Name":"}Backup_Metrics Indicators",
+	"Hierarchies@Code.links":
+	[
+		"}Backup_Metrics Indicators.hierarchies/}Backup_Metrics Indicators.json"
+	],
+	"DefaultHierarchy":
+	{
+		"@id":"Dimensions('}Backup_Metrics Indicators')/Hierarchies('}Backup_Metrics Indicators')"
+	}
+}

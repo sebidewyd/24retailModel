@@ -1,0 +1,27 @@
+{
+	"@type":"Process",
+	"Name":"Export Dimensions to SPSS",
+	"HasSecurityAccess":false,
+	"Code@Code.link":"Export Dimensions to SPSS.ti",
+	"UIData":"CubeAction=1511\fDataAction=1503\fCubeLogChanges=0\f",
+	"DataSource":
+	{
+		"Type":"None"
+	},
+	"Parameters":
+	[
+		{
+			"Name":"pDimension",
+			"Prompt":"Enter the Dimension Name",
+			"Value":"product",
+			"Type":"String"
+		},
+		{
+			"Name":"pIncludeParent",
+			"Prompt":"Include Parent?",
+			"Value":"Y",
+			"Type":"String"
+		}
+	],
+	"Variables":[]
+}

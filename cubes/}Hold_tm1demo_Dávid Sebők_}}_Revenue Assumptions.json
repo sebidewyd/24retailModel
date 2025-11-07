@@ -1,0 +1,29 @@
+{
+	"@type":"Cube",
+	"Name":"}Hold_tm1demo_Dávid Sebők_}}_Revenue Assumptions",
+	"Dimensions":
+	[
+		{
+			"@id":"Dimensions('product')"
+		},
+		{
+			"@id":"Dimensions('Channel')"
+		},
+		{
+			"@id":"Dimensions('Month')"
+		},
+		{
+			"@id":"Dimensions('Year')"
+		},
+		{
+			"@id":"Dimensions('Version')"
+		},
+		{
+			"@id":"Dimensions('RevenueAsmpt')"
+		},
+		{
+			"@id":"Dimensions('}Hold')"
+		}
+	],
+	"Views@Code.links":[]
+}

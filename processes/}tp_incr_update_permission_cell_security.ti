@@ -1,0 +1,113 @@
+#region Prolog
+
+
+#################################################################
+## IBM Confidential
+##
+## OCO Source Materials
+##
+## BI and PM: pmpsvc
+##
+## (C) Copyright IBM Corp. 2008, 2009, 2010
+##
+## The source code for this program is not published or otherwise
+## divested of its trade secrets, irrespective of what has been
+## deposited with the U.S. Copyright Office.
+#################################################################
+
+cControlPrefix = '';
+If (pControl @= 'Y');
+cControlPrefix = '}';
+EndIf;
+
+#*** Log File Name
+cTM1Process = cControlPrefix | 'tp_incr_update_permission_cell_security';
+StringGlobalVariable('gPrologLog');
+StringGlobalVariable('gEpilogLog');
+StringGlobalVariable('gDataLog');
+vReturnValue = ExecuteProcess(cControlPrefix | 'tp_get_log_file_names',
+'pExecutionId', pExecutionId, 'pProcess', cTM1Process, 'pControl', pControl);
+If (vReturnValue <> ProcessExitNormal());
+ProcessError;
+EndIf;
+cPrologLog = gPrologLog;
+cEpilogLog = gEpilogLog;
+cDataLog = gDataLog;
+cTM1Log = cPrologLog;
+
+cConfigDim = cControlPrefix | 'tp_config';
+If (DimensionExists(cConfigDim) = 1);
+cGenerateLog = ATTRS(cControlPrefix | 'tp_config', 'Generate TI Log', 'String Value');
+Else;
+cGenerateLog = 'N';
+EndIf;
+
+#*** Log Parameters
+
+If (cGenerateLog @= 'Y');
+TextOutput(cTM1Log, TIMST(NOW, '\Y-\m-\d \h:\i:\s'), 'Parameters:',
+pExecutionId, pAppId, pApprovalDim, pApprovalSubset, pInputView, pReviewerEditOn, pControl);
+EndIf;
+
+#*** 
+vCube = cControlPrefix | 'tp_application_security_update}' | pAppId;
+
+#*** Set local variables
+DataSourceType='VIEW';
+DatasourceNameForServer=vCube ;
+DatasourceCubeview=pInputView;
+#endregion
+#region Data
+
+
+#################################################################
+## IBM Confidential
+##
+## OCO Source Materials
+##
+## BI and PM: pmpsvc
+##
+## (C) Copyright IBM Corp. 2008, 2009, 2010
+##
+## The source code for this program is not published or otherwise
+## divested of its trade secrets, irrespective of what has been
+## deposited with the U.S. Copyright Office.
+#################################################################
+
+cTM1Log = cDataLog;
+
+If (vNode @<>'' & vGroup @<>'' & vValue @='Y');
+
+ExecuteProcess(cControlPrefix | 'tp_incr_update_single_node_and_group', 
+'pExecutionId', pExecutionId, 'pAppId', pAppId,
+'pApprovalDim', pApprovalDim, 'pApprovalSubset', pApprovalSubset, 
+'pUpdateNode', vNode, 'pUpdateGroup', vGroup, 
+'pReviewerEditOn',pReviewerEditOn, 'pControl', pControl);
+
+If (cGenerateLog @= 'Y');
+TextOutput(cTM1Log, TIMST(NOW, '\Y-\m-\d \h:\i:\s'), vNode, vGroup, vValue);
+EndIf;
+
+EndIf;
+#endregion
+#region Epilog
+
+
+#################################################################
+## IBM Confidential
+##
+## OCO Source Materials
+##
+## BI and PM: pmpsvc
+##
+## (C) Copyright IBM Corp. 2008, 2009, 2010
+##
+## The source code for this program is not published or otherwise
+## divested of its trade secrets, irrespective of what has been
+## deposited with the U.S. Copyright Office.
+#################################################################
+
+IF (ViewExists(vCube, pInputView)=1);
+ViewDestroy(vCube, pInputView);
+EndIf;
+#endregion

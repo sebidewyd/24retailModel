@@ -1,0 +1,12 @@
+{
+	"@type":"Dimension",
+	"Name":"}Link_Capital_3AAssetLife",
+	"Hierarchies@Code.links":
+	[
+		"}Link_Capital_3AAssetLife.hierarchies/}Link_Capital_3AAssetLife.json"
+	],
+	"DefaultHierarchy":
+	{
+		"@id":"Dimensions('}Link_Capital_3AAssetLife')/Hierarchies('}Link_Capital_3AAssetLife')"
+	}
+}

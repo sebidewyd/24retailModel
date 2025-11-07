@@ -1,0 +1,65 @@
+{
+	"@type":"Process",
+	"Name":"update_organization",
+	"HasSecurityAccess":true,
+	"Code@Code.link":"update_organization.ti",
+	"UIData":"_ParseParams={&quotmeasures&quot:[{&quotcolumnType&quot:&quotINT&quot&#044&quotsourceColumn&quot:-2&#044&quotcolumnName&quot:&quotCount&quot&#044&quotlabel&quot:&quotCount&quot&#044&quotmeasureType&quot:&quotEMPTY&quot&#044&quotexpression&quot:null&#044&quotlocale&quot:&quoten&quot&#044&quotexists&quot:false}]&#044&quothasHeader&quot:&quottrue&quot&#044&quotnumColumns&quot:&quot3&quot&#044&quotskipRows&quot:&quot0&quot&#044&quotlocale&quot:{&quotlanguange&quot:&quoten&quot&#044&quotvariant&quot:&quot&quot&#044&quotcountry&quot:&quot&quot}&#044&quotdimensions&quot:[{&quotdimensionType&quot:&quotHIERARCHY&quot&#044&quotleafSortDirection&quot:&quotASCENDING&quot&#044&quotconsolidatedSortDirection&quot:&quotASCENDING&quot&#044&quotqualifyHierarchy&quot:false&#044&quotcreateTotalRoot&quot:true&#044&quotinvariantName&quot:&quotorganization&quot&#044&quotlevels&quot:[{&quotcolumnType&quot:&quotSTRING&quot&#044&quotsourceColumn&quot:1&#044&quotcolumnName&quot:&quotParent&quot&#044&quotelementWeight&quot:&quot1&quot&#044&quotlabel&quot:&quotParent&quot&#044&quotexpression&quot:null&#044&quotexists&quot:true}&#044{&quotcolumnType&quot:&quotSTRING&quot&#044&quotsourceColumn&quot:0&#044&quotcolumnName&quot:&quotNumber&quot&#044&quotelementWeight&quot:&quot1&quot&#044&quotlabel&quot:&quotNumber&quot&#044&quotattributes&quot:[{&quotcolumnType&quot:&quotSTRING&quot&#044&quotsourceColumn&quot:2&#044&quotcolumnName&quot:&quotLabel&quot&#044&quotlabel&quot:&quotLabel&quot&#044&quotisAlias&quot:&quottrue&quot&#044&quotexpression&quot:null&#044&quotinvariantName&quot:&quot&quot&#044&quotexists&quot:true}]&#044&quotexpression&quot:null&#044&quotexists&quot:true}]&#044&quotisMeasureDimension&quot:false&#044&quotparentChild&quot:false&#044&quotstrategy&quot:&quotMERGE&quot&#044&quotconsolidatedSortType&quot:&quotBY_NAME&quot&#044&quotlabel&quot:&quotOrganization&quot&#044&quotisMemberUpdateStrategyChanged&quot:false&#044&quotleafSortType&quot:&quotBY_NAME&quot&#044&quotqualifySeparator&quot:&quot&#044 &quot&#044&quotexists&quot:true}]}\f_DeployParams={&quotdataAction&quot:&quotACCUMULATE&quot&#044&quotclass&quot:&quotDeployParams&quot&#044&quotdimensionConflictResolutions&quot:{}}\f_ExcelSource={\"filePath\":\"C:\\\\TM1Models\\\\Guyco\\\\Files\\\\Organization.xlsx\",\"sheetName\":\"Organization\",\"type\":\"EXCELXML\",\"cellRange\":{\"r2\":\"-1\",\"c1\":\"0\",\"c2\":\"-1\",\"r1\":\"0\"}}\f",
+	"VariablesUIData":
+	[
+		"_DimCaption=Organization\f_DimType=HIERARCHY\fVarType=32\fColType=825\fVarDimension=organization\fVarDimOrder=1\fVarDimAction=Update\fVarElemType=Numeric\fVarDimElemSortType=ByName\fVarDimElemSortSense=ASCENDING\f_LevelCaption=Number\f_UserVisible=v_Number_0\f_UILabel=Number\f_DataType=STRING\f_SourceIndex=0\f",
+		"VarType=32\fColType=858\fConsolidationDim=organization\fConsolidationChildVar=v_Number_0\fConsolidationChildWeight=1.0\fComponentSortType=ByName\fComponentSortSense=ASCENDING\f_LevelCaption=Parent\f_UserVisible=v_Parent_1\f_UILabel=Parent\f_DataType=STRING\f_SourceIndex=1\f",
+		"VarType=32\fColType=841\fAttributeDim=organization\fAttributeElemVar=v_Number_0\fAttributeAction=Update\fAttributeName=Label\fAttributeType=Alias\f_UserVisible=v_Label_2\f_UILabel=Label\f_DataType=STRING\f_SourceIndex=2\f",
+		"VarType=32\fColType=858\fConsolidationDim=organization\fConsolidationChildVar=v_Parent_1\fConsolidationChildWeight=1.0\fComponentSortType=ByName\fComponentSortSense=ASCENDING\f_LevelCaption=Total \f_TotalMember=Total of Organization\fVarName=v_Total_of_Organization\fVarFormula=v_Total_of_Organization='Total of Organization';\fVarFormulaDestination=DATA\f"
+	],
+	"DataSource":
+	{
+		"Type":"ASCII",
+		"asciiDecimalSeparator":".",
+		"asciiDelimiterChar":",",
+		"asciiDelimiterType":"Character",
+		"asciiHeaderRecords":1,
+		"asciiQuoteCharacter":"\"",
+		"asciiThousandSeparator":",",
+		"dataSourceNameForClient":"C:\\Temp\\TILoad4969076987167133641.csv",
+		"dataSourceNameForServer":"C:\\Temp\\TILoad4969076987167133641.csv"
+	},
+	"Parameters":
+	[
+		{
+			"Name":"param_destroy",
+			"Prompt":"Destroy dimensions",
+			"Value":0,
+			"Type":"Numeric"
+		},
+		{
+			"Name":"param_createIfNotExist",
+			"Prompt":"Create dimensions if they do not exist",
+			"Value":1,
+			"Type":"Numeric"
+		}
+	],
+	"Variables":
+	[
+		{
+			"Name":"v_Number_0",
+			"Type":"String",
+			"Position":1,
+			"StartByte":0,
+			"EndByte":0
+		},
+		{
+			"Name":"v_Parent_1",
+			"Type":"String",
+			"Position":2,
+			"StartByte":0,
+			"EndByte":0
+		},
+		{
+			"Name":"v_Label_2",
+			"Type":"String",
+			"Position":3,
+			"StartByte":0,
+			"EndByte":0
+		}
+	]
+}

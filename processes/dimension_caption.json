@@ -1,0 +1,12 @@
+{
+	"@type":"Process",
+	"Name":"dimension_caption",
+	"HasSecurityAccess":false,
+	"Code@Code.link":"dimension_caption.ti",
+	"DataSource":
+	{
+		"Type":"None"
+	},
+	"Parameters":[],
+	"Variables":[]
+}

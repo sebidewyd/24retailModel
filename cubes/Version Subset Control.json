@@ -1,0 +1,25 @@
+{
+	"@type":"Cube",
+	"Name":"Version Subset Control",
+	"Dimensions":
+	[
+		{
+			"@id":"Dimensions('Version Subsets')"
+		},
+		{
+			"@id":"Dimensions('LineItemList')"
+		},
+		{
+			"@id":"Dimensions('Version Subset Measures')"
+		}
+	],
+	"Rules@Code.link":"Version Subset Control.rules",
+	"ViewStorageMaxMemory":999999999,
+	"ViewStorageMinTime":1,
+	"Views@Code.links":
+	[
+		"Version Subset Control.views/All.json",
+		"Version Subset Control.views/Default.json",
+		"Version Subset Control.views/Version Subset Control.json"
+	]
+}

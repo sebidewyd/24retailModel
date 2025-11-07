@@ -1,0 +1,11 @@
+{
+	"@type":"Subset",
+	"Name":"Drill",
+	"Alias":"Label2",
+	"Elements":
+	[
+		{
+			"@id":"Dimensions('jobcode')/Hierarchies('jobcode')/Elements('C004')"
+		}
+	]
+}

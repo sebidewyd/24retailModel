@@ -1,0 +1,17 @@
+{
+	"@type":"Subset",
+	"Name":"Capital Review",
+	"Alias":"Caption_Default",
+	"Elements":
+	[
+		{
+			"@id":"Dimensions('Depreciation')/Hierarchies('Depreciation')/Elements('Additions')"
+		},
+		{
+			"@id":"Dimensions('Depreciation')/Hierarchies('Depreciation')/Elements('Total Depreciation')"
+		},
+		{
+			"@id":"Dimensions('Depreciation')/Hierarchies('Depreciation')/Elements('Asset End Bal')"
+		}
+	]
+}

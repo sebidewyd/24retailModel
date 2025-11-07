@@ -1,0 +1,12 @@
+{
+	"@type":"Dimension",
+	"Name":"Compensation",
+	"Hierarchies@Code.links":
+	[
+		"Compensation.hierarchies/Compensation.json"
+	],
+	"DefaultHierarchy":
+	{
+		"@id":"Dimensions('Compensation')/Hierarchies('Compensation')"
+	}
+}

@@ -1,0 +1,12 @@
+{
+	"@type":"Dimension",
+	"Name":"SM Entries",
+	"Hierarchies@Code.links":
+	[
+		"SM Entries.hierarchies/SM Entries.json"
+	],
+	"DefaultHierarchy":
+	{
+		"@id":"Dimensions('SM Entries')/Hierarchies('SM Entries')"
+	}
+}
