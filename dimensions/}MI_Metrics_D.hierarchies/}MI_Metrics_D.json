@@ -1,0 +1,27 @@
+{
+	"@type":"Hierarchy",
+	"Name":"}MI_Metrics_D",
+	"Elements":
+	[
+		{
+			"Name":"Impacting Metric",
+			"Type":"String"
+		},
+		{
+			"Name":"Strength",
+			"Type":"String"
+		},
+		{
+			"Name":"Calculated Type",
+			"Type":"String"
+		},
+		{
+			"Name":"Nature of Impact",
+			"Type":"String"
+		}
+	],
+	"Subsets@Code.links":
+	[
+		"}MI_Metrics_D.subsets/All Members.json"
+	]
+}

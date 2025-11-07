@@ -1,0 +1,34 @@
+{
+	"@type":"Cube",
+	"Name":"}ICube_}Link_Dep_3ACap_Additions",
+	"Dimensions":
+	[
+		{
+			"@id":"Dimensions('Month')"
+		},
+		{
+			"@id":"Dimensions('organization')"
+		},
+		{
+			"@id":"Dimensions('CapitalList')"
+		},
+		{
+			"@id":"Dimensions('Asset Types')"
+		},
+		{
+			"@id":"Dimensions('Year')"
+		},
+		{
+			"@id":"Dimensions('Version')"
+		},
+		{
+			"@id":"Dimensions('Capital')"
+		}
+	],
+	"Rules@Code.link":"}ICube_}Link_Dep_3ACap_Additions.rules",
+	"Views@Code.links":
+	[
+		"}ICube_}Link_Dep_3ACap_Additions.views/All.json",
+		"}ICube_}Link_Dep_3ACap_Additions.views/ICube_}Link_Dep_3ACap_Additions.json"
+	]
+}

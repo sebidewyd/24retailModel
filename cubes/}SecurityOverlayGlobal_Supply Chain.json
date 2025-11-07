@@ -1,0 +1,15 @@
+{
+	"@type":"Cube",
+	"Name":"}SecurityOverlayGlobal_Supply Chain",
+	"Dimensions":
+	[
+		{
+			"@id":"Dimensions('organization')"
+		},
+		{
+			"@id":"Dimensions('}SecurityOverlay')"
+		}
+	],
+	"Rules@Code.link":"}SecurityOverlayGlobal_Supply Chain.rules",
+	"Views@Code.links":[]
+}

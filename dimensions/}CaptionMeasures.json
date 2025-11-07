@@ -1,0 +1,12 @@
+{
+	"@type":"Dimension",
+	"Name":"}CaptionMeasures",
+	"Hierarchies@Code.links":
+	[
+		"}CaptionMeasures.hierarchies/}CaptionMeasures.json"
+	],
+	"DefaultHierarchy":
+	{
+		"@id":"Dimensions('}CaptionMeasures')/Hierarchies('}CaptionMeasures')"
+	}
+}

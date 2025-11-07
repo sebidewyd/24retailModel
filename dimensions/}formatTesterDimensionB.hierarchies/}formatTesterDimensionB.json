@@ -1,0 +1,23 @@
+{
+	"@type":"Hierarchy",
+	"Name":"}formatTesterDimensionB",
+	"Elements":
+	[
+		{
+			"Name":"formatMember",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"formatMemberCAMID(\"PMDemo:40\")",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"formatMemberCAMID(\"IBMDemo:40\")",
+			"Type":"Numeric"
+		}
+	],
+	"Subsets@Code.links":
+	[
+		"}formatTesterDimensionB.subsets/All Members.json"
+	]
+}

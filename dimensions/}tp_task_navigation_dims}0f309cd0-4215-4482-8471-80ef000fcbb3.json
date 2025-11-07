@@ -1,0 +1,12 @@
+{
+	"@type":"Dimension",
+	"Name":"}tp_task_navigation_dims}0f309cd0-4215-4482-8471-80ef000fcbb3",
+	"Hierarchies@Code.links":
+	[
+		"}tp_task_navigation_dims}0f309cd0-4215-4482-8471-80ef000fcbb3.hierarchies/}tp_task_navigation_dims}0f309cd0-4215-4482-8471-80ef000fcbb3.json"
+	],
+	"DefaultHierarchy":
+	{
+		"@id":"Dimensions('}tp_task_navigation_dims}0f309cd0-4215-4482-8471-80ef000fcbb3')/Hierarchies('}tp_task_navigation_dims}0f309cd0-4215-4482-8471-80ef000fcbb3')"
+	}
+}

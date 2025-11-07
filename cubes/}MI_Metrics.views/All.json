@@ -1,0 +1,42 @@
+{
+	"@type":"NativeView",
+	"Name":"All",
+	"Columns":[],
+	"Rows":[],
+	"Titles":
+	[
+		{
+			"Subset":
+			{
+				"@id":"Dimensions('Metrics')/Hierarchies('Metrics')/Subsets('All Members')"
+			},
+			"Selected":
+			{
+				"@id":"Dimensions('Metrics')/Hierarchies('Metrics')/Elements('Statistics')"
+			}
+		},
+		{
+			"Subset":
+			{
+				"@id":"Dimensions('}MI_Metrics_I')/Hierarchies('}MI_Metrics_I')/Subsets('All Members')"
+			},
+			"Selected":
+			{
+				"@id":"Dimensions('}MI_Metrics_I')/Hierarchies('}MI_Metrics_I')/Elements('1')"
+			}
+		},
+		{
+			"Subset":
+			{
+				"@id":"Dimensions('}MI_Metrics_D')/Hierarchies('}MI_Metrics_D')/Subsets('All Members')"
+			},
+			"Selected":
+			{
+				"@id":"Dimensions('}MI_Metrics_D')/Hierarchies('}MI_Metrics_D')/Elements('Impacting Metric')"
+			}
+		}
+	],
+	"SuppressEmptyColumns":false,
+	"SuppressEmptyRows":false,
+	"FormatString":"0.00"
+}
