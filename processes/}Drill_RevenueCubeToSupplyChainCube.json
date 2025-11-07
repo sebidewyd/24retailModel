@@ -1,0 +1,66 @@
+{
+	"@type":"Process",
+	"Name":"}Drill_RevenueCubeToSupplyChainCube",
+	"HasSecurityAccess":false,
+	"Code@Code.link":"}Drill_RevenueCubeToSupplyChainCube.ti",
+	"UIData":"CubeAction=1511\fDataAction=1503\fCubeLogChanges=0\f",
+	"DataSource":
+	{
+		"Type":"TM1CubeView",
+		"dataSourceNameForClient":"Supply Chain",
+		"dataSourceNameForServer":"Supply Chain",
+		"view":"DetailCOGSdrillView"
+	},
+	"Parameters":
+	[
+		{
+			"Name":"cubename",
+			"Prompt":"",
+			"Value":"Revenue",
+			"Type":"String"
+		},
+		{
+			"Name":"organization",
+			"Prompt":"",
+			"Value":"Total Company",
+			"Type":"String"
+		},
+		{
+			"Name":"Channel",
+			"Prompt":"",
+			"Value":"Channel Total",
+			"Type":"String"
+		},
+		{
+			"Name":"product",
+			"Prompt":"",
+			"Value":"Product Total",
+			"Type":"String"
+		},
+		{
+			"Name":"Month",
+			"Prompt":"",
+			"Value":"Year",
+			"Type":"String"
+		},
+		{
+			"Name":"Year",
+			"Prompt":"",
+			"Value":"2012",
+			"Type":"String"
+		},
+		{
+			"Name":"Version",
+			"Prompt":"",
+			"Value":"Budget",
+			"Type":"String"
+		},
+		{
+			"Name":"Revenue",
+			"Prompt":"",
+			"Value":"Total Cost of Goods Sold",
+			"Type":"String"
+		}
+	],
+	"Variables":[]
+}

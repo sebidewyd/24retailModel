@@ -1,0 +1,58 @@
+#region Prolog
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+If (DimensionExists('Account') <> 0);
+  DimensionDeleteAllElements('Account');
+Else;
+  DimensionCreate('Account');
+EndIf;
+AttrDelete('Account','signswitch');
+AttrInsert('Account','','signswitch','N');
+AttrDelete('Account','Forecast Method');
+AttrInsert('Account','','Forecast Method','S');
+AttrDelete('Account','Format');
+AttrInsert('Account','','Format','S');
+AttrDelete('Account','Caption_Default');
+AttrInsert('Account','','Caption_Default','A');
+AttrDelete('Account','Account Description Base');
+AttrInsert('Account','','Account Description Base','A');
+AttrDelete('Account','calculation');
+AttrInsert('Account','','calculation','S');
+AttrDelete('Account','Account Description');
+AttrInsert('Account','','Account Description','A');
+AttrDelete('Account','crossdimcalc');
+AttrInsert('Account','','crossdimcalc','S');
+AttrDelete('Account','Exchange Rate Type');
+AttrInsert('Account','','Exchange Rate Type','S');
+AttrDelete('Account','Picklist');
+AttrInsert('Account','','Picklist','S');
+#endregion
+#region Metadata
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+If (VOp @= 'M');  DimensionElementInsert('Account','',VParam0,VParam2);
+  If (VParam1 @<> '');
+    DimensionElementComponentAdd('Account',VParam1,VParam0,1);
+  EndIf;
+ElseIf (VOp @= 'C');
+  DimensionElementInsert('Account','',VParam0,VParam2);
+  If (VParam1 @<> '');
+    DimensionElementComponentAdd('Account',VParam1,VParam0,1);
+  EndIf;
+EndIf;
+#endregion
+#region Data
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+If (VOp @= 'A');
+  AttrPutS(VParam2,'Account',VParam0,VParam1);
+ElseIf (VOp @= 'AN');
+  AttrPutN(StringToNumberEx(VParam2,'.',''),'Account',VParam0,VParam1);
+ElseIf (VOp @= 'C');
+  AttrPutS(VCap,'Account',VParam0,'Caption_Default');
+EndIf;
+#endregion
+#region Epilog
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+#endregion

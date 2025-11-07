@@ -1,0 +1,62 @@
+{
+	"@type":"Process",
+	"Name":"}Drill_JobTypeAssumption",
+	"HasSecurityAccess":true,
+	"Code@Code.link":"}Drill_JobTypeAssumption.ti",
+	"UIData":"CubeAction=1511\fDataAction=1503\fCubeLogChanges=0\f",
+	"VariablesUIData":
+	[
+		"IgnoredInputVarName=vVersion\fVarType=32\fColType=1165\f",
+		"IgnoredInputVarName=JobType\fVarType=32\fColType=1165\f",
+		"IgnoredInputVarName=JobTypeAssumption\fVarType=32\fColType=1165\f",
+		"IgnoredInputVarName=V4\fVarType=32\fColType=1165\f",
+		"IgnoredInputVarName=Value\fVarType=33\fColType=1165\f"
+	],
+	"DataSource":
+	{
+		"Type":"TM1CubeView",
+		"dataSourceNameForClient":"Job Type Assumption",
+		"dataSourceNameForServer":"Job Type Assumption",
+		"view":"Drill"
+	},
+	"Parameters":
+	[
+		{
+			"Name":"cubename",
+			"Prompt":"",
+			"Value":"Employee",
+			"Type":"String"
+		},
+		{
+			"Name":"organization",
+			"Prompt":"",
+			"Value":"100",
+			"Type":"String"
+		},
+		{
+			"Name":"EmployeeList",
+			"Prompt":"",
+			"Value":"Total",
+			"Type":"String"
+		},
+		{
+			"Name":"pYear",
+			"Prompt":"",
+			"Value":"Y1",
+			"Type":"String"
+		},
+		{
+			"Name":"Version",
+			"Prompt":"",
+			"Value":"Version 1",
+			"Type":"String"
+		},
+		{
+			"Name":"Employee",
+			"Prompt":"",
+			"Value":"Name/Desc",
+			"Type":"String"
+		}
+	],
+	"Variables":[]
+}

@@ -1,0 +1,54 @@
+#region Prolog
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+If (DimensionExists('Version') <> 0);
+  DimensionDeleteAllElements('Version');
+Else;
+  DimensionCreate('Version');
+EndIf;
+AttrDelete('Version','Version Type');
+AttrInsert('Version','','Version Type','S');
+AttrDelete('Version','Label');
+AttrInsert('Version','','Label','A');
+AttrDelete('Version','Format');
+AttrInsert('Version','','Format','S');
+AttrDelete('Version','Caption_Default');
+AttrInsert('Version','','Caption_Default','A');
+AttrDelete('Version','permittedcalculations_n_and_c');
+AttrInsert('Version','','permittedcalculations_n_and_c','S');
+AttrDelete('Version','}FormatType');
+AttrInsert('Version','','}FormatType','S');
+AttrDelete('Version','LinkVersion');
+AttrInsert('Version','','LinkVersion','S');
+AttrDelete('Version','Picklist');
+AttrInsert('Version','','Picklist','S');
+#endregion
+#region Metadata
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+If (VOp @= 'M');  DimensionElementInsert('Version','',VParam0,VParam2);
+  If (VParam1 @<> '');
+    DimensionElementComponentAdd('Version',VParam1,VParam0,1);
+  EndIf;
+ElseIf (VOp @= 'C');
+  DimensionElementInsert('Version','',VParam0,VParam2);
+  If (VParam1 @<> '');
+    DimensionElementComponentAdd('Version',VParam1,VParam0,1);
+  EndIf;
+EndIf;
+#endregion
+#region Data
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+If (VOp @= 'A');
+  AttrPutS(VParam2,'Version',VParam0,VParam1);
+ElseIf (VOp @= 'AN');
+  AttrPutN(StringToNumberEx(VParam2,'.',''),'Version',VParam0,VParam1);
+ElseIf (VOp @= 'C');
+  AttrPutS(VCap,'Version',VParam0,'Caption_Default');
+EndIf;
+#endregion
+#region Epilog
+#****Begin: Generated Statements***
+#****End: Generated Statements****
+#endregion

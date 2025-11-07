@@ -1,0 +1,35 @@
+#region Prolog
+cOwnPermissionElement = 'OWN';
+cAppSecurityCube = '}ElementSecurity_}tp_applications';
+cAppPermSecurityCube = '}CellSecurity_}tp_application_root_permissions';
+	
+cGroupsDimSize = DIMSIZ('}Groups');
+vIndexI = 1;
+While (vIndexI <= cGroupsDimSize);
+	vGroup = DIMNM('}Groups', vIndexI);
+	If (vGroup @<> 'Admin' & vGroup @<> 'DataAdmin' & vGroup @<> 'SecurityAdmin');
+		vPerm = CellGetS(cAppSecurityCube, pAppId, vGroup);
+		If (vPerm @= 'READ');
+			CellPutS('READ', cAppPermSecurityCube, pAppId, cOwnPermissionElement, vGroup);
+		Else;
+			CellPutS('NONE', cAppPermSecurityCube, pAppId, cOwnPermissionElement, vGroup);
+		EndIf;
+	EndIf;
+	
+	vIndexI = vIndexI + 1;
+End;
+
+#*** Copy old annotations to new location
+cOldAnnotationCube = '}ElementAnnotations_}Dimensions';
+cOldElement = '}Annotation_ApplicationID';
+cNewAnnotationCube = '}ElementAnnotations_}tp_workflow_actions';
+cNewElement = 'ANNOTATE';
+cAnnotationData = 'Annotations';
+If (CubeExists(cOldAnnotationCube) = 0);
+	CellPutS('', cNewAnnotationCube, pAppId, cNewElement, cAnnotationData);
+Else;
+	vAnnotations = CellGetS(cOldAnnotationCube, pAppId, cOldElement, cAnnotationData);
+	CellPutS(vAnnotations, cNewAnnotationCube, pAppId, cNewElement, cAnnotationData);
+	CellPutS('', cOldAnnotationCube, pAppId, cOldElement, cAnnotationData);
+EndIf;
+#endregion

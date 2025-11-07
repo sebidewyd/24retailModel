@@ -1,0 +1,26 @@
+{
+	"@type":"Process",
+	"Name":"}tp_populate_data_to_central_app_artifacts",
+	"HasSecurityAccess":false,
+	"Code@Code.link":"}tp_populate_data_to_central_app_artifacts.ti",
+	"DataSource":
+	{
+		"Type":"None"
+	},
+	"Parameters":
+	[
+		{
+			"Name":"pExecutionId",
+			"Prompt":"",
+			"Value":"None",
+			"Type":"String"
+		},
+		{
+			"Name":"pAppId",
+			"Prompt":"",
+			"Value":"MyApp",
+			"Type":"String"
+		}
+	],
+	"Variables":[]
+}
